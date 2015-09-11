@@ -54,7 +54,7 @@ if (isset($_POST['input'])){
 	print "<B>RESPONSE: " . $botresponse->response . "<BR></b>";
 	print "<BR><BR>execution time: " . $botresponse->timer;
 	print "<BR>numselects= $numselects";
-    print_r($botresponse);
+
 
 	//print_r($botresponse->inputs);
 	//print_r($botresponse->patternsmatched);
