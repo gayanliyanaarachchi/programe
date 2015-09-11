@@ -6,6 +6,8 @@ See http://sourceforge.net/projects/programe/ for more details.
 ### Installation instructions
 
 **Prerequisites**: PHP (4.0.4+) compiled --with-mysql and --with-xml and a recent version of MySQL 3.23.xx and Apache. PHP version 4.2.2 recommended.
+
+
 1. If you have a previous version of Program E delete all of its files and wipe its database.
 2. Create a database for the program to use in MySQL.
 3. Create the tables in the new database using `db.sql` which is in the sql directory.
