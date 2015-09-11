@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<aiml version="2.0">
+   
+
+  <category>
+        <pattern>
+		        I need to change my phone number in my insurance *
+        </pattern>
+		
+        <template>
+           Certainly. May I know your full name?
+       </template>
+   </category>
+   
+   <category>
+        <pattern>
+		         Jim Brown
+		</pattern>
+		
+        <template>
+           Thank you. Could you please provide your policy number? 
+		</template>
+   </category>
+   
+   <category>
+        <pattern>
+		         Policy number is 453778908
+        </pattern>
+		
+        <template>
+           Perfect. 
+           Thanks for clearing security questions.
+           Your existing primary phone number is 09876543 and your existing secondary phone number is 05643777.
+           Do you want to change your primary phone number or the secondary phone number?
+       </template>
+   </category>
+   
+   <category>
+        <pattern>
+		        I want to change the primary phone *
+		</pattern>
+		
+        <template>
+          Please state your new phone number
+        </template>
+   </category>
+   
+   <category>
+        <pattern>
+		       3497832
+		</pattern>
+		
+        <template>
+          your primary phone number is 03497832. Do I have your permission to make this change effective from today?
+        </template>
+   </category>
+   
+   <category>
+        <pattern>
+		        Yes Sure
+		</pattern>
+		
+        <template>
+         Thanks. The requested changes has been submitted under the reference number 8c1234.
+		 We will send a confirmation by your preferred communication medium. 
+         Before we close we have seen that your policy expires on 20/09/2015 and I would like to offer you a one month extension for your policy expiration for just $15.
+		 Do you want to go ahead?
+		</template>
+   </category>
+   
+   <category>
+        <pattern>
+		       Yes Please
+       </pattern>
+		
+        <template>
+          Your policy details will be updated and the details will be sent by e-mail. 
+          Would you like do any further changes please?
+        </template>
+   </category>
+   
+ 
+ <category>
+        <pattern>
+		      * thank you
+	    </pattern>
+		
+        <template>
+      You’re welcome.
+		  If you want to see your policy details, please click on the link below
+
+      https://fnoldev-aigdevportal.cs51.force.com/AIGGo/apex/CP_publicindexpage#/policy/453778908
+
+      Thank you for doing business with us today. Have a great day!
+
+
+        </template>
+   </category>
+   
+   
+
+<!--when user input Question that not belong to the script-->
+<category>
+        <pattern>
+		      *
+	    </pattern>
+		
+        <template>
+          I'm sorry, I did not understand your question.
+        </template>
+   </category>
+
+
+
+
+</aiml>
+
+
+
