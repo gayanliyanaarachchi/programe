@@ -91,10 +91,12 @@ define("PROGRAMEVERSION","v0.09");
 // This is where all the AIML and startup.xml resides
 $rootdir="../../aiml_test/";
 
-$DB_HOST="localhost";
-$DB_UNAME="root";
-$DB_PWORD="";
-$DB_DB="programe";
+$DB_HOST="us-cdbr-iron-east-02.cleardb.net";
+$DB_UNAME="b8cfa3d0d626a7";
+$DB_PWORD="16bdbacb";
+$DB_DB="heroku_b2fb2958e14b01b";
+
+//mysql://b8cfa3d0d626a7:16bdbacb@us-cdbr-iron-east-02.cleardb.net/heroku_b2fb2958e14b01b?reconnect=true
 
 $errors="";
 

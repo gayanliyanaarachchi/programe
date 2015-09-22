@@ -56,7 +56,7 @@ CREATE TABLE conversationlog (
   input text,
   response text,
   uid varchar(255) default NULL,
-  enteredtime timestamp(6) NOT NULL,
+  enteredtime timestamp NOT NULL,
   PRIMARY KEY  (id),
   KEY botid (bot)
 ) ;
@@ -70,7 +70,7 @@ CREATE TABLE dstore (
   uid varchar(255) default NULL,
   name text,
   value text,
-  enteredtime timestamp(6) NOT NULL,
+  enteredtime timestamp NOT NULL,
   id int(11) NOT NULL auto_increment,
   PRIMARY KEY  (id),
   KEY nameidx (name(40))
@@ -148,7 +148,7 @@ CREATE TABLE templates (
 
 CREATE TABLE thatindex (
   uid varchar(255) default NULL,
-  enteredtime timestamp(6) NOT NULL,
+  enteredtime timestamp NOT NULL,
   id int(11) NOT NULL auto_increment,
   PRIMARY KEY  (id)
 ) ;
@@ -162,7 +162,7 @@ CREATE TABLE thatstack (
   thatid int(11) NOT NULL default '0',
   id int(11) NOT NULL auto_increment,
   value varchar(255) default NULL,
-  enteredtime timestamp(6) NOT NULL,
+  enteredtime timestamp NOT NULL,
   PRIMARY KEY  (id)
 ) ;
 
